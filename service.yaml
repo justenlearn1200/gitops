@@ -1,0 +1,11 @@
+# ~/gitops-repo/apps/my-app/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app
+spec:
+  selector:
+    app: my-app
+  ports:
+  - port: 80
+    targetPort: 80
